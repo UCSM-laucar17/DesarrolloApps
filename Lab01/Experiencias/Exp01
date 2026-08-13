@@ -1,1 +1,16 @@
+<em>Este es mi primer elemento HTML</em>
+<a href="https://www.youtube.com/" title="Página de inicio de YouTube" target="_blank">YouTube</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica N° 01</title>
+</head>
+<body>
 
+    <em>Este es mi primer elemento HTML</em>
+
+    <a href="https://www.youtube.com/" title="Página de inicio de YouTube" target="_blank">YouTube</a>
+
+</body>
+</html>
