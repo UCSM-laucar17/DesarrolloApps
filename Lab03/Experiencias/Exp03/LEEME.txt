@@ -1,0 +1,32 @@
+EXPERIENCIA DE PRÁCTICA N.° 01
+¿POR QUÉ SE ROMPE MI INTERFAZ?
+================================
+
+Objetivo:
+Analizar una interfaz que funciona en una pantalla amplia, pero presenta
+problemas al reducir el tamaño del viewport.
+
+IMPORTANTE
+----------
+El proyecto contiene problemas intencionales de diseño responsive.
+NO corrijas el código inmediatamente.
+
+Antes de modificarlo:
+1. Abre index.html en el navegador.
+2. Observa la interfaz en una ventana amplia.
+3. Reduce progresivamente el ancho.
+4. Utiliza el modo responsive de las herramientas del navegador.
+5. Identifica al menos cinco problemas.
+6. Registra para cada uno:
+   - problema observado;
+   - posible causa;
+   - posible solución.
+
+Preguntas:
+- ¿Todos los problemas necesitan una Media Query?
+- ¿Qué problemas podrían solucionarse con medidas flexibles?
+- ¿Qué elementos utilizan dimensiones rígidas?
+- ¿Existe algún uso de position que genere desbordamiento?
+- ¿Qué ocurre con la navegación, las imágenes y los botones?
+
+Práctica N.° 03 – Desarrollo de Aplicaciones – 2026
