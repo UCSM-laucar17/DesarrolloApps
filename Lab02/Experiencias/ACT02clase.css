@@ -1,0 +1,101 @@
+.fondo-principal {
+    background-color: #f7f5f0;
+    color: #3e3832;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado-destacado {
+    background-color: #8c6239;
+    color: #f7f5f0;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.titulo-principal {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.subtitulo-web {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #e6dfd3;
+}
+
+.contenedor-contenido {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.tarjeta-terracota {
+    background-color: #d9825b;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-musgo {
+    background-color: #6e7f60;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-arena {
+    background-color: #e6dfd3;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #8c6239;
+}
+
+.titulo-seccion {
+    color: #3e3832;
+    margin-top: 0;
+}
+
+.titulo-seccion-clara {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.texto-destacado {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #2b1a08;
+}
+
+.texto-normal {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a423a;
+}
+
+.texto-normal-claro {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f7f5f0;
+}
+
+.texto-alerta {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #ffe6cc;
+    font-weight: bold;
+}
+
+.pie-pagina {
+    background-color: #2b2520;
+    color: #e6dfd3;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 4rem;
+}
+
+.texto-pie {
+    margin: 0;
+    font-size: 0.9rem;
+}

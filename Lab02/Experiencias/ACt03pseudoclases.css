@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Estilos Base (Estética de tonos suaves y naturales)
+   ========================================================================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3efe6; /* Arena lino muy suave */
+    color: #40352c; /* Marrón tronco */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #705e52; /* Café intermedio */
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+ 
+.menu-tierra a:link {
+    color: #8c583e; 
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+ .menu-tierra a:visited {
+    color: #be8567;  
+}
+
+ 
+.menu-tierra a:hover {
+    background-color: #e6dfd3;  
+    border-radius: 4px;
+}
+
+.tabla-datos tbody tr:hover {
+    background-color: #eae3d2; 
+}
+
+ .menu-tierra a:active {
+    background-color: #cbd2c1; 
+}
+ 
+.tabla-datos th:first-child, 
+.tabla-datos td:first-child {
+    font-weight: bold;
+    color: #5c6b4d;  
+}
+
+ 
+.tabla-datos tbody tr:nth-child(even) {
+    background-color: #fbf9f6; 
+}
+
+ input:focus {
+    outline: none;
+    border: 2px solid #8c583e;
+    background-color: #fffdfa;
+    box-shadow: 0 0 5px rgba(140, 88, 62, 0.3);
+}
+
+input:invalid {
+    border-color: #a64444; 
+}
+
+input:invalid:focus + .mensaje-error {
+    display: block;
+    color: #a64444;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.mensaje-error {
+    display: none;
+}
+
+input:valid {
+    border: 2px solid #5c6b4d; 
+}
+
+.menu-tierra a:not(.enlace-bloqueado) {
+    border-bottom: 2px solid transparent;
+}
+
+.menu-tierra a:not(.enlace-bloqueado):hover {
+    border-bottom: 2px solid #8c583e;
+}
+
+.enlace-bloqueado {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.tabla-datos th {
+    background-color: #d9cbb6;
+    text-align: left;
+    padding: 10px;
+}
+.tabla-datos td {
+    padding: 10px;
+    border-bottom: 1px solid #e6dfd3;
+}
+
+.campo-grupo {
+    margin-bottom: 15px;
+}
+.campo-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd2c1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #705e52;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
