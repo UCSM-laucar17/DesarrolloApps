@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba de Servidor Polimórfico</title>
+</head>
+<body>
+    <h2>Formulario para enviar JSON</h2>
+    <form action="http://127.0.0.1:8105" method="POST">
+        <label>Identificador:</label><br>
+        <input type="text" name="identificador" value="1"><br><br>
+
+        <label>Token Operación:</label><br>
+        <input type="text" name="token_operacion" value="CODE1234HONEY"><br><br>
+
+        <label>Comando:</label><br>
+        <input type="text" name="comando" value="REBOOT"><br><br>
+
+        <button type="submit">Enviar POST</button>
+    </form>
+</body>
+</html>

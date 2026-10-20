@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FOrmulario inscripcion</title>
+</head>
+<body>
+    <h2>Formularion con tokens</h2>
+    
+    <label>DNI:</label><br>
+    <input type="text" id="dni" value="72635412"><br><br>
+
+    <label>Correo Electrónico:</label><br>
+    <input type="text" id="correo" value="laura.carbajal@ucsm.edu.pe"><br><br>
+
+    <label>Programa Académico:</label><br>
+    <input type="text" id="programa" value="Ingenieria de Sistemas"><br><br>
+
+    <button onclick="enviarDatos()">Enviar POST</button>
+
+    <h3>Respuesta del Servidor:</h3>
+    <pre id="resultado" style="background: #222; color: #fff; padding: 15px; border-radius: 5px;">resultados...</pre>
+
+    <script>
+        async function enviarDatos() {
+            const url = 'http://127.0.0';
+            const contenedor = document.getElementById('resultado');
+            contenedor.innerText = "Enviando...";
+
+            const datos = {
+                dni: document.getElementById('dni').value,
+                correo_electronico: document.getElementById('correo').value,
+                programa_academico: document.getElementById('programa').value
+            };
+
+            try {
+                const respuesta = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer TOKEN_SECRETO_2026' // Inyección obligatoria del Middleware
+                    },
+                    body: JSON.stringify(datos)
+                });
+
+                const cuerpoJson = await respuesta.json();
+                contenedor.innerText = `Código HTTP: ${respuesta.status}\n\n` + JSON.stringify(cuerpoJson, null, 4);
+            } catch (error) {
+                contenedor.innerText = "Error de conexión con el servidor: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
