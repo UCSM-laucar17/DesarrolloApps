@@ -1,7 +1,6 @@
 import reflex as rx
 import re
 
-
 class Ejercicio3State(rx.State):
     solicitudes: list[dict[str, str]] = []
     mensaje: str = ""

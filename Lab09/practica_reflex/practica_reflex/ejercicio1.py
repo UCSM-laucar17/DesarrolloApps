@@ -1,6 +1,6 @@
 import reflex as rx
 class Ejercicio1State(rx.State):
-    #Lista de tareas en formato JSON
+    #Lista de tareas
     tareas: list[dict[str, str]] = [
         {
             "id": "1",
